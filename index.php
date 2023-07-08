@@ -1,6 +1,6 @@
 <?php get_header(); ?>
     
-        <section class="main__content">
+        <section class="main__content" id="main">
             <div class="container">
                 <div class="main__info">
                     <span class="main__info-small">New Menu</span>
