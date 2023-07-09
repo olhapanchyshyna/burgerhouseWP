@@ -4,36 +4,36 @@
             <div class="container">
                 <div class="main__info">
                     <span class="main__info-small">New Menu</span>
-                    <h1 class="main__title">Cheddar Burger</h1>
-                    <img src="<?php echo bloginfo("template_url");?>/assets/images/main_burger.png" alt="burger" class="main__photo hidemax">
-                    <div class="main__description">We have updated our menu, hurry up to try our seasonal novelties and enjoy the excellent taste of our burgers. We prepare the best burgers in town using selected marble beef.</div>
+                    <h1 class="main__title"><?php the_field('main_title');?></h1>
+                    <img src="<?php the_field('main_img');?>" alt="burger" class="main__photo hidemax">
+                    <div class="main__description"><?php the_field('main_descr');?></div>
                     <div class="main__btn">
-                        <a href="#menu" class="btn">View Menu</a>
+                        <a href="#menu" class="btn"><?php the_field('main_btn');?></a>
                     </div>
                 </div>
-                <img src="<?php echo bloginfo("template_url");?>/assets/images/main_burger.png" alt="burger" class="main__photo hidemin">
+                <img src="<?php the_field('main_img');?>" alt="burger" class="main__photo hidemin">
             </div>
         </section>
     </section>
 
     <section class="why" id="why">
         <div class="container">
-            <h2 class="title">Why Choose Us?</h2>
+            <h2 class="title"><?php the_field('why_title', 32);?></h2>
             <div class="why__list">
                 <div class="why__item">
-                    <img src="<?php echo bloginfo("template_url");?>/assets/images/why/burger.svg" alt="burger" class="why__item-img">
-                    <div class="why__item-title">Unique Recipes</div>
-                    <div class="why__item-description">Our burgers have a unique combination of flavors that are unlike any others. We carefully select the best ingredients and flavor combinations for our menu.</div>
+                    <img src="<?php the_field('why_item1_img', 32);?>" alt="burger" class="why__item-img">
+                    <div class="why__item-title"><?php the_field('why_item1_title', 32);?></div>
+                    <div class="why__item-description"><?php the_field('why_item1_descr', 32);?></div>
                 </div>
                 <div class="why__item">
-                    <img src="<?php echo bloginfo("template_url");?>/assets/images/why/meat.svg" alt="meat" class="why__item-img">
-                    <div class="why__item-title">Marble Beef</div>
-                    <div class="why__item-description">We use premium 100% marble beef for our burgers, sourced exclusively from farmers. We are confident in the quality of our meat.</div>
+                    <img src="<?php the_field('why_item2_img', 32);?>" alt="burger" class="why__item-img">
+                    <div class="why__item-title"><?php the_field('why_item2_title', 32);?></div>
+                    <div class="why__item-description"><?php the_field('why_item2_descr', 32);?></div>
                 </div>
                 <div class="why__item">
-                    <img src="<?php echo bloginfo("template_url");?>/assets/images/why/food-truck.svg" alt="food-truck" class="why__item-img">
-                    <div class="why__item-title">Fast Delivery</div>
-                    <div class="why__item-description">We offer delivery within the Moscow Ring Road in 30 minutes, and if we don't make it on time, the delivery is free. We carefully package our burgers to ensure they stay warm during transportation.</div>
+                    <img src="<?php the_field('why_item3_img', 32);?>" alt="burger" class="why__item-img">
+                    <div class="why__item-title"><?php the_field('why_item3_title', 32);?></div>
+                    <div class="why__item-description"><?php the_field('why_item3_descr', 32);?></div>
                 </div>
             </div>
         </div>
@@ -41,18 +41,18 @@
 
     <section class="products" id="menu">
         <div class="container">
-            <h2 class="title">Choose Your Burger</h2>
+            <h2 class="title"><?php the_field('choose_title', 38);?></h2>
             <div class="products__list">
                 <!-- 1 -->
                 <div class="products__item">
                     <div class="products__item-img">
-                        <img src="<?php echo bloginfo("template_url");?>/assets/images/products/burger-1.png" alt="burger 1">
+                        <img src="<?php the_field('choose_item1_img', 38);?>" alt="burger 1">
                     </div>
-                    <div class="products__item-title">Cheddar & Bacon Burger</div>
-                    <div class="products__item-description">Crispy beef patty, bun, tomato, Cheddar cheese, bacon, red onion, iceberg lettuce, mayonnaise, ketchup, cheese sauce</div>
+                    <div class="products__item-title"><?php the_field('choose_item1_title', 38);?></div>
+                    <div class="products__item-description"><?php the_field('choose_item1_descr', 38);?></div>
                     <div class="products__item-footer">
                         <div class="products__item-info">
-                            <div class="products__item-price">8$</div>
+                            <div class="products__item-price"><?php the_field('choose_item1_price', 38);?>$</div>
                             <div class="products__item-weight">360g</div>
                         </div>
                         <a href="#order" class="btn products__item-btn">Order
@@ -68,13 +68,13 @@
                 <!-- 2 -->
                 <div class="products__item">
                     <div class="products__item-img">
-                        <img src="<?php echo bloginfo("template_url");?>/assets/images/products/burger-2.png" alt="burger 2">
+                        <img src="<?php the_field('choose_item2_img', 38);?>" alt="burger 2">
                     </div>
-                    <div class="products__item-title">BBQ Burger with Bacon and Chicken</div>
-                    <div class="products__item-description">Brioche sesame seed bun, chicken patty, Cheddar cheese, tomato, pickled cucumber, pickled onion, Romaine lettuce, bacon, BBQ sauce</div>
+                    <div class="products__item-title"><?php the_field('choose_item2_title', 38);?></div>
+                    <div class="products__item-description"><?php the_field('choose_item2_descr', 38);?></div>
                     <div class="products__item-footer">
                         <div class="products__item-info">
-                            <div class="products__item-price">7$</div>
+                            <div class="products__item-price"><?php the_field('choose_item2_price', 38);?>$</div>
                             <div class="products__item-weight">390g</div>
                         </div>
                         <a href="#order" class="btn products__item-btn">Order
@@ -90,13 +90,13 @@
                 <!-- 3 -->
                 <div class="products__item">
                     <div class="products__item-img">
-                        <img src="<?php echo bloginfo("template_url");?>/assets/images/products/burger-3.png" alt="burger 3">
+                        <img src="<?php the_field('choose_item3_img', 38);?>" alt="burger 3">
                     </div>
-                    <div class="products__item-title">Double Beef Burger</div>
-                    <div class="products__item-description">Two beef patties, Cheddar cheese, romaine lettuce, pickles, fresh tomato, bacon, red onion, burger sauce, mustard</div>
+                    <div class="products__item-title"><?php the_field('choose_item3_title', 38);?></div>
+                    <div class="products__item-description"><?php the_field('choose_item3_descr', 38);?></div>
                     <div class="products__item-footer">
                         <div class="products__item-info">
-                            <div class="products__item-price">10$</div>
+                            <div class="products__item-price"><?php the_field('choose_item3_price', 38);?>$</div>
                             <div class="products__item-weight">420g</div>
                         </div>
                         <a href="#order" class="btn products__item-btn">Order 
@@ -112,13 +112,13 @@
                 <!-- 4 -->
                 <div class="products__item">
                     <div class="products__item-img">
-                        <img src="<?php echo bloginfo("template_url");?>/assets/images/products/burger-4.png" alt="burger 4">
+                        <img src="<?php the_field('choose_item4_img', 38);?>" alt="burger 4">
                     </div>
-                    <div class="products__item-title">Bavarian Burger</div>
-                    <div class="products__item-description">Burger bun, beef patty, red onion, cheese, hunter sausage, barbecue sauce, cheese sauce, iceberg lettuce</div>
+                    <div class="products__item-title"><?php the_field('choose_item4_title', 38);?></div>
+                    <div class="products__item-description"><?php the_field('choose_item4_descr', 38);?></div>
                     <div class="products__item-footer">
                         <div class="products__item-info">
-                            <div class="products__item-price">7$</div>
+                            <div class="products__item-price"><?php the_field('choose_item4_price', 38);?>$</div>
                             <div class="products__item-weight">220 g</div>
                         </div>
                         <a href="#order" class="btn products__item-btn">Order
@@ -134,13 +134,13 @@
                 <!-- 5 -->
                 <div class="products__item">
                     <div class="products__item-img">
-                        <img src="<?php echo bloginfo("template_url");?>/assets/images/products/burger-5.png" alt="burger 5">
+                        <img src="<?php the_field('choose_item5_img', 38);?>" alt="burger 5">
                     </div>
-                    <div class="products__item-title">Bacon Cheeseburger</div>
-                    <div class="products__item-description">Burger bun, beef patty, bacon, tomato, pickles, cheese, cheese sauce, ketchup, greens</div>
+                    <div class="products__item-title"><?php the_field('choose_item5_title', 38);?></div>
+                    <div class="products__item-description"><?php the_field('choose_item5_descr', 38);?></div>
                     <div class="products__item-footer">
                         <div class="products__item-info">
-                            <div class="products__item-price">8$</div>
+                            <div class="products__item-price"><?php the_field('choose_item5_price', 38);?>$</div>
                             <div class="products__item-weight">220g</div>
                         </div>
                         <a href="#order" class="btn products__item-btn">Order
@@ -156,13 +156,13 @@
                 <!-- 6 -->
                 <div class="products__item">
                     <div class="products__item-img">
-                        <img src="<?php echo bloginfo("template_url");?>/assets/images/products/burger-6.png" alt="burger 6">
+                        <img src="<?php the_field('choose_item6_img', 38);?>" alt="burger 6">
                     </div>
-                    <div class="products__item-title">Indiana Burger</div>
-                    <div class="products__item-description">Burger bun, chicken patty, bacon, egg, pickles, crispy onions, ketchup, cheese sauce, mustard, greens</div>
+                    <div class="products__item-title"><?php the_field('choose_item6_title', 38);?></div>
+                    <div class="products__item-description"><?php the_field('choose_item6_descr', 38);?></div>
                     <div class="products__item-footer">
                         <div class="products__item-info">
-                            <div class="products__item-price">9$</div>
+                            <div class="products__item-price"><?php the_field('choose_item6_price', 38);?>$</div>
                             <div class="products__item-weight">320g</div>
                         </div>
                         <a href="#order" class="btn products__item-btn">Order
@@ -178,13 +178,13 @@
                 <!-- 7 -->
                 <div class="products__item">
                     <div class="products__item-img">
-                        <img src="<?php echo bloginfo("template_url");?>/assets/images/products/burger-7.png" alt="burger 7">
+                        <img src="<?php the_field('choose_item7_img', 38);?>" alt="burger 7">
                     </div>
-                    <div class="products__item-title">Veggie Burger</div>
-                    <div class="products__item-description">Burger bun, vegetarian patty, red onion, cheese, fresh tomato, barbecue sauce, cheese sauce, iceberg lettuce</div>
+                    <div class="products__item-title"><?php the_field('choose_item7_title', 38);?></div>
+                    <div class="products__item-description"><?php the_field('choose_item7_descr', 38);?></div>
                     <div class="products__item-footer">
                         <div class="products__item-info">
-                            <div class="products__item-price">8$</div>
+                            <div class="products__item-price"><?php the_field('choose_item7_price', 38);?>$</div>
                             <div class="products__item-weight">280g</div>
                         </div>
                         <a href="#order" class="btn products__item-btn">Order
@@ -200,13 +200,13 @@
                 <!-- 8 -->
                 <div class="products__item">
                     <div class="products__item-img">
-                        <img src="<?php echo bloginfo("template_url");?>/assets/images/products/burger-8.png" alt="burger 8">
+                        <img src="<?php the_field('choose_item8_img', 38);?>" alt="burger 8">
                     </div>
-                    <div class="products__item-title">Плаксивый Джо</div>
-                    <div class="products__item-description">Булочка для бургера, говяжья котлета,gудинка, помидор, огурец маринованный, красный лук, сыр, перец халапеньо, кетчуп, зелень</div>
+                    <div class="products__item-title"><?php the_field('choose_item8_title', 38);?></div>
+                    <div class="products__item-description"><?php the_field('choose_item8_descr', 38);?></div>
                     <div class="products__item-footer">
                         <div class="products__item-info">
-                            <div class="products__item-price">7$</div>
+                            <div class="products__item-price"><?php the_field('choose_item8_price', 38);?>$</div>
                             <div class="products__item-weight">380g</div>
                         </div>
                         <a href="#order" class="btn products__item-btn">Order
@@ -222,13 +222,13 @@
                 <!-- 9 -->
                 <div class="products__item">
                     <div class="products__item-img">
-                        <img src="<?php echo bloginfo("template_url");?>/assets/images/products/burger-9.png" alt="burger 9">
+                        <img src="<?php the_field('choose_item9_img', 38);?>" alt="burger 9">
                     </div>
-                    <div class="products__item-title">Whiny Joe</div>
-                    <div class="products__item-description">Burger bun, beef patty, bacon, tomato, pickled cucumber, red onion, cheese, jalapeno pepper, ketchup, greens</div>
+                    <div class="products__item-title"><?php the_field('choose_item9_title', 38);?></div>
+                    <div class="products__item-description"><?php the_field('choose_item9_descr', 38);?></div>
                     <div class="products__item-footer">
                         <div class="products__item-info">
-                            <div class="products__item-price">11$</div>
+                            <div class="products__item-price"><?php the_field('choose_item9_price', 38);?>$</div>
                             <div class="products__item-weight">400g</div>
                         </div>
                         <a href="#order" class="btn products__item-btn">Order
@@ -244,13 +244,13 @@
                 <!-- 10 -->
                 <div class="products__item">
                     <div class="products__item-img">
-                        <img src="<?php echo bloginfo("template_url");?>/assets/images/products/burger-10.png" alt="burger 10">
+                        <img src="<?php the_field('choose_item10_img', 38);?>" alt="burger 10">
                     </div>
-                    <div class="products__item-title">Freshburger</div>
-                    <div class="products__item-description">Burger bun, beef patty, bacon, cheddar cheese, egg, salami, BBQ sauce, cheese sauce, iceberg lettuce, fresh tomato</div>
+                    <div class="products__item-title"><?php the_field('choose_item10_title', 38);?></div>
+                    <div class="products__item-description"><?php the_field('choose_item10_descr', 38);?></div>
                     <div class="products__item-footer">
                         <div class="products__item-info">
-                            <div class="products__item-price">9$</div>
+                            <div class="products__item-price"><?php the_field('choose_item10_price', 38);?>$</div>
                             <div class="products__item-weight">300g</div>
                         </div>
                         <a href="#order" class="btn products__item-btn">Order
@@ -266,13 +266,13 @@
                 <!-- 11 -->
                 <div class="products__item">
                     <div class="products__item-img">
-                        <img src="<?php echo bloginfo("template_url");?>/assets/images/products/burger-11.png" alt="burger 11">
+                        <img src="<?php the_field('choose_item11_img', 38);?>" alt="burger 11">
                     </div>
-                    <div class="products__item-title">Zucchini Burger</div>
-                    <div class="products__item-description">Burger bun, vegetarian chickpea patty, grilled zucchini, tomato, pickled cucumber, cheese, mustard sauce, ketchup, greens</div>
+                    <div class="products__item-title"><?php the_field('choose_item11_title', 38);?></div>
+                    <div class="products__item-description"><?php the_field('choose_item11_descr', 38);?></div>
                     <div class="products__item-footer">
                         <div class="products__item-info">
-                            <div class="products__item-price">8$</div>
+                            <div class="products__item-price"><?php the_field('choose_item11_price', 38);?>$</div>
                             <div class="products__item-weight">320g</div>
                         </div>
                         <a href="#order" class="btn products__item-btn">Order
@@ -288,13 +288,13 @@
                 <!-- 12 -->
                 <div class="products__item">
                     <div class="products__item-img">
-                        <img src="<?php echo bloginfo("template_url");?>/assets/images/products/burger-12.png" alt="burger 12">
+                        <img src="<?php the_field('choose_item12_img', 38);?>" alt="burger 12">
                     </div>
-                    <div class="products__item-title">Double Cheddar Burger</div>
-                    <div class="products__item-description">Burger bun, beef patty, bacon, red onion, pickled cucumber, tomato, ketchup, double cheddar cheese, mustard, greens</div>
+                    <div class="products__item-title"><?php the_field('choose_item12_title', 38);?></div>
+                    <div class="products__item-description"><?php the_field('choose_item12_descr', 38);?></div>
                     <div class="products__item-footer">
                         <div class="products__item-info">
-                            <div class="products__item-price">9$</div>
+                            <div class="products__item-price"><?php the_field('choose_item12_price', 38);?>$</div>
                             <div class="products__item-weight">360g</div>
                         </div>
                         <a href="#order" class="btn products__item-btn">Order
@@ -313,8 +313,8 @@
 
     <section class="order" id="order">
         <div class="container">
-            <h2 class="title">Order Placement</h2>
-            <img src="<?php echo bloginfo("template_url");?>/assets/images/order/order_image.png" alt="order" class="order__img">
+            <h2 class="title"><?php the_field('order_title', 103);?></h2>
+            <img src="<?php the_field('order_img', 103);?>" alt="order" class="order__img">
             <div class="order__content">
                 <div class="order__form">
                     <div class="order__form-description">Please fill in all the required information and our manager will contact you to confirm the order.</div>

@@ -374,9 +374,13 @@ body.lock {
   margin-bottom: 50px;
 }
 .main__photo {
-  z-index: 0;
-  margin-top: -120px;
-  margin-left: -160px;
+    max-width: 1030px;
+    max-height: 923px;
+    width: 100%;
+    z-index: 0;
+    margin-top: -120px;
+    margin-left: -160px;
+    object-fit: contain;
 }
 
 .why {
